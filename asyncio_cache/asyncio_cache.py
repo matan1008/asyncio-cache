@@ -27,6 +27,9 @@ class _HashedSeq(list):
     def __hash__(self):
         return self.hash_value
 
+    def __eq__(self, other):
+        return super().__eq__(other)
+
 
 def _make_key(args, kwds, typed, kwd_mark=(object(),), fast_types=None):
     """Make a cache key from optionally typed positional and keyword arguments
