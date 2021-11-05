@@ -1,6 +1,6 @@
 import pytest
 
-from asyncio_cache.asyncio_cache import cache
+from asyncio_cache import cache
 
 
 class CallsCounter:
