@@ -217,6 +217,6 @@ def _lru_cache_wrapper(user_function, maxsize, typed):
 # cache -- simplified access to the infinity cache
 ################################################################################
 
-def cache(user_function, /):
+def cache(user_function):
     """Simple lightweight unbounded cache.  Sometimes called "memoize"."""
     return lru_cache(maxsize=None)(user_function)

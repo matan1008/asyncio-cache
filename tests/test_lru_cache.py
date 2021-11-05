@@ -1,6 +1,6 @@
 import pytest
 
-from asyncio_cache.asyncio_cache import lru_cache
+from asyncio_cache import lru_cache
 
 
 class CallsCounter:
